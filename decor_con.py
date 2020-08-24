@@ -2,10 +2,12 @@ import time
 
 class Secundomer:
 	def __init__(self, num_runs):
+		# Количество запусков = num_runs
 		self.num_runs = num_runs
 		self.t0 = time.time()
 		print('Вычисляем ', num_runs, 'раз функцию, суммирующую члены последовательности Фибоначчи.')
-	
+		
+	# Функция вычисляет среднее время выполнения функции fibon_it
 	def run(self):
 		def decorator(func):
 			def wrap(param):
